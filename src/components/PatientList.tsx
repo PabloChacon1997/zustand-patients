@@ -15,6 +15,7 @@ export default function PatientList() {
               <p className="text-xl my-5 mb-10 text-center">
                 Administra tus {''}
                 <span className="text-indigo-600 font-bold">pacientes y citas</span>
+              </p>
                 {
                   patients.map(patient => (
                     <PatientDetails 
@@ -23,7 +24,6 @@ export default function PatientList() {
                     />
                   ))
                 }
-              </p>
             </>
           )
           : (
